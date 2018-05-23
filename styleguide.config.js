@@ -1,3 +1,4 @@
+const path = require('path')
 module.exports = {
 	title: 'React Style Guide Example',
 	defaultExample: true,
@@ -16,4 +17,7 @@ module.exports = {
 			],
 		},
 	},
+	styleguideComponents: {
+    Wrapper: path.join(__dirname, 'lib/styleguide/Wrapper')
+  },
 };
